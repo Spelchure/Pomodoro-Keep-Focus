@@ -110,6 +110,10 @@
     <Content Include="Images\8.png" />
     <Content Include="Images\9.png" />
     <Content Include="Images\app.ico" />
+    <Content Include="Images\fb_logo.png" />
+    <Content Include="Images\insta_logo.png" />
+    <Content Include="Images\pausebutton.png" />
+    <Content Include="Images\playbutton.png" />
     <None Include="Images\bb_logo.png" />
     <Content Include="Images\semicolon.png" />
   </ItemGroup>

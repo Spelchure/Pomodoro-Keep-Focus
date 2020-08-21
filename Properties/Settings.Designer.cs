@@ -23,33 +23,51 @@ namespace Pomodoro_Keep_Focus.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("25")]
-        public decimal pWorkTime {
+        public int pWorkTime {
             get {
-                return ((decimal)(this["pWorkTime"]));
+                return ((int)(this["pWorkTime"]));
+            }
+            set {
+                this["pWorkTime"] = value;
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("5")]
-        public decimal pMolaTime {
+        public int pMolaTime {
             get {
-                return ((decimal)(this["pMolaTime"]));
+                return ((int)(this["pMolaTime"]));
+            }
+            set {
+                this["pMolaTime"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("25")]
-        public string pRestTime {
+        public int pRestTime {
             get {
-                return ((string)(this["pRestTime"]));
+                return ((int)(this["pRestTime"]));
             }
             set {
                 this["pRestTime"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int lastMode {
+            get {
+                return ((int)(this["lastMode"]));
+            }
+            set {
+                this["lastMode"] = value;
             }
         }
     }

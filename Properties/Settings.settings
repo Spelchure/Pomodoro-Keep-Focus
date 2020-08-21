@@ -2,14 +2,17 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Pomodoro_Keep_Focus.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="pWorkTime" Type="System.Decimal" Scope="Application">
+    <Setting Name="pWorkTime" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">25</Value>
     </Setting>
-    <Setting Name="pMolaTime" Type="System.Decimal" Scope="Application">
+    <Setting Name="pMolaTime" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">5</Value>
     </Setting>
-    <Setting Name="pRestTime" Type="System.String" Scope="User">
+    <Setting Name="pRestTime" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="lastMode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>
