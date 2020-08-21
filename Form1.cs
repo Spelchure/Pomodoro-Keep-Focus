@@ -16,5 +16,11 @@ namespace Pomodoro_Keep_Focus
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // Websiteyi açma işlemi
+            System.Diagnostics.Process.Start("https://www.bilgisayarbilimi.org");
+        }
     }
 }

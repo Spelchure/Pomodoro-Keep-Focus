@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Pomodoro Keep Focus")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Keep your Focus with Pomodoro Technic")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Bilgisayar Bilimi")]
 [assembly: AssemblyProduct("Pomodoro Keep Focus")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCopyright("Copyright ©  Bilgisayar Bilimi 2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
