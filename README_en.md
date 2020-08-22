@@ -7,7 +7,7 @@
 Pomodoro Keep Focus, uses pomodoro technic that you work efficiently and planned.
 
 ### Screenshot
-![Screenhot](https://www.github.com/Spelchure/Pomodoro-Keep-Focus/blob/master/Images/prog.PNG?raw=true)
+![Screenhot](Images/prog.PNG?raw=true)
 
 ### Features
 

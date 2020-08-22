@@ -9,7 +9,7 @@ For english: [README_en.md](https://github.com/Spelchure/Pomodoro-Keep-Focus/blo
 
 
 ### Ekran görüntüsü
-![Screenhot](https://www.github.com/Spelchure/Pomodoro-Keep-Focus/blob/master/Images/prog.PNG?raw=true)
+![Screenhot](Images/prog.PNG?raw=true)
 
 ### Özellikler
 
