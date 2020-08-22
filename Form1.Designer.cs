@@ -41,11 +41,41 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.hedeflerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.görünümToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayarlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hakkımızdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.labelRest = new System.Windows.Forms.Label();
+            this.labelMola = new System.Windows.Forms.Label();
+            this.labelPomodoro = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.labelDate = new System.Windows.Forms.Label();
+            this.deleteStatistics = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.günlükHedefToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.haftalıkHedefToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aylıkHedefToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yeniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yeniToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gösterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.yeniToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gösterToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture2)).BeginInit();
+            this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // timePicture0
@@ -53,7 +83,7 @@
             this.timePicture0.BackColor = System.Drawing.Color.Transparent;
             this.timePicture0.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.timePicture0.Image = global::Pomodoro_Keep_Focus.Properties.Resources._0;
-            this.timePicture0.Location = new System.Drawing.Point(366, 12);
+            this.timePicture0.Location = new System.Drawing.Point(368, 45);
             this.timePicture0.Name = "timePicture0";
             this.timePicture0.Size = new System.Drawing.Size(80, 89);
             this.timePicture0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -65,7 +95,7 @@
             this.timePicture1.BackColor = System.Drawing.Color.Transparent;
             this.timePicture1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.timePicture1.Image = global::Pomodoro_Keep_Focus.Properties.Resources._0;
-            this.timePicture1.Location = new System.Drawing.Point(452, 12);
+            this.timePicture1.Location = new System.Drawing.Point(454, 45);
             this.timePicture1.Name = "timePicture1";
             this.timePicture1.Size = new System.Drawing.Size(80, 89);
             this.timePicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -77,7 +107,7 @@
             this.timePicture3.BackColor = System.Drawing.Color.Transparent;
             this.timePicture3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.timePicture3.Image = global::Pomodoro_Keep_Focus.Properties.Resources._0;
-            this.timePicture3.Location = new System.Drawing.Point(597, 12);
+            this.timePicture3.Location = new System.Drawing.Point(599, 45);
             this.timePicture3.Name = "timePicture3";
             this.timePicture3.Size = new System.Drawing.Size(80, 89);
             this.timePicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -89,7 +119,7 @@
             this.timePicture4.BackColor = System.Drawing.Color.Transparent;
             this.timePicture4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.timePicture4.Image = global::Pomodoro_Keep_Focus.Properties.Resources._0;
-            this.timePicture4.Location = new System.Drawing.Point(683, 12);
+            this.timePicture4.Location = new System.Drawing.Point(685, 45);
             this.timePicture4.Name = "timePicture4";
             this.timePicture4.Size = new System.Drawing.Size(80, 89);
             this.timePicture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -101,7 +131,7 @@
             this.timePicture2.BackColor = System.Drawing.Color.Transparent;
             this.timePicture2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.timePicture2.Image = global::Pomodoro_Keep_Focus.Properties.Resources.semicolon;
-            this.timePicture2.Location = new System.Drawing.Point(526, 12);
+            this.timePicture2.Location = new System.Drawing.Point(528, 45);
             this.timePicture2.Name = "timePicture2";
             this.timePicture2.Size = new System.Drawing.Size(80, 89);
             this.timePicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -120,7 +150,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(716, 107);
+            this.button1.Location = new System.Drawing.Point(718, 140);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(48, 45);
             this.button1.TabIndex = 6;
@@ -173,12 +203,272 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hedeflerToolStripMenuItem,
+            this.görünümToolStripMenuItem,
+            this.ayarlarToolStripMenuItem,
+            this.hakkımızdaToolStripMenuItem,
+            this.yardımToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(771, 24);
+            this.menuStrip1.TabIndex = 11;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // hedeflerToolStripMenuItem
+            // 
+            this.hedeflerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.günlükHedefToolStripMenuItem,
+            this.haftalıkHedefToolStripMenuItem,
+            this.aylıkHedefToolStripMenuItem});
+            this.hedeflerToolStripMenuItem.Name = "hedeflerToolStripMenuItem";
+            this.hedeflerToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.hedeflerToolStripMenuItem.Text = "Hedefler";
+            // 
+            // görünümToolStripMenuItem
+            // 
+            this.görünümToolStripMenuItem.Name = "görünümToolStripMenuItem";
+            this.görünümToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.görünümToolStripMenuItem.Text = "Görünüm";
+            // 
+            // ayarlarToolStripMenuItem
+            // 
+            this.ayarlarToolStripMenuItem.Name = "ayarlarToolStripMenuItem";
+            this.ayarlarToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.ayarlarToolStripMenuItem.Text = "Ayarlar";
+            this.ayarlarToolStripMenuItem.Click += new System.EventHandler(this.ayarlarToolStripMenuItem_Click);
+            // 
+            // hakkımızdaToolStripMenuItem
+            // 
+            this.hakkımızdaToolStripMenuItem.Name = "hakkımızdaToolStripMenuItem";
+            this.hakkımızdaToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.hakkımızdaToolStripMenuItem.Text = "Hakkımızda";
+            // 
+            // yardımToolStripMenuItem
+            // 
+            this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
+            this.yardımToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.yardımToolStripMenuItem.Text = "Yardım";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.labelRest);
+            this.groupBox1.Controls.Add(this.labelMola);
+            this.groupBox1.Controls.Add(this.labelPomodoro);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Location = new System.Drawing.Point(12, 88);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(252, 190);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "İstatistikler";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(6, 160);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(125, 19);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Toplam: 0 dakika";
+            // 
+            // labelRest
+            // 
+            this.labelRest.AutoSize = true;
+            this.labelRest.Location = new System.Drawing.Point(80, 118);
+            this.labelRest.Name = "labelRest";
+            this.labelRest.Size = new System.Drawing.Size(87, 19);
+            this.labelRest.TabIndex = 18;
+            this.labelRest.Text = "0 = 0 dakika";
+            // 
+            // labelMola
+            // 
+            this.labelMola.AutoSize = true;
+            this.labelMola.Location = new System.Drawing.Point(101, 81);
+            this.labelMola.Name = "labelMola";
+            this.labelMola.Size = new System.Drawing.Size(87, 19);
+            this.labelMola.TabIndex = 17;
+            this.labelMola.Text = "0 = 0 dakika";
+            // 
+            // labelPomodoro
+            // 
+            this.labelPomodoro.AutoSize = true;
+            this.labelPomodoro.Location = new System.Drawing.Point(137, 39);
+            this.labelPomodoro.Name = "labelPomodoro";
+            this.labelPomodoro.Size = new System.Drawing.Size(87, 19);
+            this.labelPomodoro.TabIndex = 16;
+            this.labelPomodoro.Text = "0 = 0 dakika";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 118);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 19);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Dinlenme:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 19);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Verilen Mola:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 19);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Yapılan Pomodoro:";
+            // 
+            // labelDate
+            // 
+            this.labelDate.AutoSize = true;
+            this.labelDate.Font = new System.Drawing.Font("Noto Sans Cond", 15.75F, System.Drawing.FontStyle.Bold);
+            this.labelDate.Location = new System.Drawing.Point(12, 33);
+            this.labelDate.Name = "labelDate";
+            this.labelDate.Size = new System.Drawing.Size(58, 28);
+            this.labelDate.TabIndex = 13;
+            this.labelDate.Text = "Tarih";
+            // 
+            // deleteStatistics
+            // 
+            this.deleteStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteStatistics.Location = new System.Drawing.Point(12, 284);
+            this.deleteStatistics.Name = "deleteStatistics";
+            this.deleteStatistics.Size = new System.Drawing.Size(116, 24);
+            this.deleteStatistics.TabIndex = 14;
+            this.deleteStatistics.Text = "İstatiskleri temizle";
+            this.deleteStatistics.UseVisualStyleBackColor = true;
+            this.deleteStatistics.Click += new System.EventHandler(this.deleteStatistics_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::Pomodoro_Keep_Focus.Properties.Resources.reply;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button5.Location = new System.Drawing.Point(610, 140);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(48, 45);
+            this.button5.TabIndex = 15;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Noto Sans Cond", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(363, 145);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(153, 28);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Çalışma Zamanı";
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::Pomodoro_Keep_Focus.Properties.Resources.skip;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button6.Location = new System.Drawing.Point(664, 140);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(48, 45);
+            this.button6.TabIndex = 17;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // günlükHedefToolStripMenuItem
+            // 
+            this.günlükHedefToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yeniToolStripMenuItem,
+            this.gösterToolStripMenuItem});
+            this.günlükHedefToolStripMenuItem.Name = "günlükHedefToolStripMenuItem";
+            this.günlükHedefToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.günlükHedefToolStripMenuItem.Text = "Günlük Hedef";
+            // 
+            // haftalıkHedefToolStripMenuItem
+            // 
+            this.haftalıkHedefToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yeniToolStripMenuItem1,
+            this.gösterToolStripMenuItem1});
+            this.haftalıkHedefToolStripMenuItem.Name = "haftalıkHedefToolStripMenuItem";
+            this.haftalıkHedefToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.haftalıkHedefToolStripMenuItem.Text = "Haftalık Hedef";
+            // 
+            // aylıkHedefToolStripMenuItem
+            // 
+            this.aylıkHedefToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yeniToolStripMenuItem2,
+            this.gösterToolStripMenuItem2});
+            this.aylıkHedefToolStripMenuItem.Name = "aylıkHedefToolStripMenuItem";
+            this.aylıkHedefToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aylıkHedefToolStripMenuItem.Text = "Aylık Hedef";
+            // 
+            // yeniToolStripMenuItem
+            // 
+            this.yeniToolStripMenuItem.Name = "yeniToolStripMenuItem";
+            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.yeniToolStripMenuItem.Text = "Yeni";
+            // 
+            // gösterToolStripMenuItem
+            // 
+            this.gösterToolStripMenuItem.Name = "gösterToolStripMenuItem";
+            this.gösterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gösterToolStripMenuItem.Text = "Göster";
+            // 
+            // yeniToolStripMenuItem1
+            // 
+            this.yeniToolStripMenuItem1.Name = "yeniToolStripMenuItem1";
+            this.yeniToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.yeniToolStripMenuItem1.Text = "Yeni";
+            // 
+            // gösterToolStripMenuItem1
+            // 
+            this.gösterToolStripMenuItem1.Name = "gösterToolStripMenuItem1";
+            this.gösterToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.gösterToolStripMenuItem1.Text = "Göster";
+            // 
+            // yeniToolStripMenuItem2
+            // 
+            this.yeniToolStripMenuItem2.Name = "yeniToolStripMenuItem2";
+            this.yeniToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.yeniToolStripMenuItem2.Text = "Yeni";
+            // 
+            // gösterToolStripMenuItem2
+            // 
+            this.gösterToolStripMenuItem2.Name = "gösterToolStripMenuItem2";
+            this.gösterToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.gösterToolStripMenuItem2.Text = "Göster";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Firebrick;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(771, 450);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.deleteStatistics);
+            this.Controls.Add(this.labelDate);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -188,9 +478,11 @@
             this.Controls.Add(this.timePicture3);
             this.Controls.Add(this.timePicture1);
             this.Controls.Add(this.timePicture0);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Pomodoro Tekniği ile Verimli Çalışma - Bilgisayar Bilimi 2020";
@@ -201,7 +493,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.timePicture3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture2)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -217,6 +514,34 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem hedeflerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem görünümToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hakkımızdaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ayarlarToolStripMenuItem;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label labelRest;
+        private System.Windows.Forms.Label labelMola;
+        private System.Windows.Forms.Label labelPomodoro;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelDate;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button deleteStatistics;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.ToolStripMenuItem günlükHedefToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yeniToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gösterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem haftalıkHedefToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yeniToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem gösterToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem aylıkHedefToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem yeniToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem gösterToolStripMenuItem2;
     }
 }
 
