@@ -69,6 +69,7 @@
             this.gösterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.yeniToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.gösterToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveStatistics = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture3)).BeginInit();
@@ -83,7 +84,7 @@
             this.timePicture0.BackColor = System.Drawing.Color.Transparent;
             this.timePicture0.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.timePicture0.Image = global::Pomodoro_Keep_Focus.Properties.Resources._0;
-            this.timePicture0.Location = new System.Drawing.Point(368, 45);
+            this.timePicture0.Location = new System.Drawing.Point(366, 111);
             this.timePicture0.Name = "timePicture0";
             this.timePicture0.Size = new System.Drawing.Size(80, 89);
             this.timePicture0.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -95,7 +96,7 @@
             this.timePicture1.BackColor = System.Drawing.Color.Transparent;
             this.timePicture1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.timePicture1.Image = global::Pomodoro_Keep_Focus.Properties.Resources._0;
-            this.timePicture1.Location = new System.Drawing.Point(454, 45);
+            this.timePicture1.Location = new System.Drawing.Point(452, 111);
             this.timePicture1.Name = "timePicture1";
             this.timePicture1.Size = new System.Drawing.Size(80, 89);
             this.timePicture1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -107,7 +108,7 @@
             this.timePicture3.BackColor = System.Drawing.Color.Transparent;
             this.timePicture3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.timePicture3.Image = global::Pomodoro_Keep_Focus.Properties.Resources._0;
-            this.timePicture3.Location = new System.Drawing.Point(599, 45);
+            this.timePicture3.Location = new System.Drawing.Point(597, 111);
             this.timePicture3.Name = "timePicture3";
             this.timePicture3.Size = new System.Drawing.Size(80, 89);
             this.timePicture3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -119,7 +120,7 @@
             this.timePicture4.BackColor = System.Drawing.Color.Transparent;
             this.timePicture4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.timePicture4.Image = global::Pomodoro_Keep_Focus.Properties.Resources._0;
-            this.timePicture4.Location = new System.Drawing.Point(685, 45);
+            this.timePicture4.Location = new System.Drawing.Point(683, 111);
             this.timePicture4.Name = "timePicture4";
             this.timePicture4.Size = new System.Drawing.Size(80, 89);
             this.timePicture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,7 +132,7 @@
             this.timePicture2.BackColor = System.Drawing.Color.Transparent;
             this.timePicture2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.timePicture2.Image = global::Pomodoro_Keep_Focus.Properties.Resources.semicolon;
-            this.timePicture2.Location = new System.Drawing.Point(528, 45);
+            this.timePicture2.Location = new System.Drawing.Point(526, 111);
             this.timePicture2.Name = "timePicture2";
             this.timePicture2.Size = new System.Drawing.Size(80, 89);
             this.timePicture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -150,7 +151,7 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(718, 140);
+            this.button1.Location = new System.Drawing.Point(716, 206);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(48, 45);
             this.button1.TabIndex = 6;
@@ -363,7 +364,7 @@
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.Location = new System.Drawing.Point(610, 140);
+            this.button5.Location = new System.Drawing.Point(608, 206);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(48, 45);
             this.button5.TabIndex = 15;
@@ -374,7 +375,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Noto Sans Cond", 15.75F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(363, 145);
+            this.label5.Location = new System.Drawing.Point(361, 211);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(153, 28);
             this.label5.TabIndex = 16;
@@ -387,7 +388,7 @@
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button6.Location = new System.Drawing.Point(664, 140);
+            this.button6.Location = new System.Drawing.Point(662, 206);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(48, 45);
             this.button6.TabIndex = 17;
@@ -457,12 +458,24 @@
             this.gösterToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.gösterToolStripMenuItem2.Text = "Göster";
             // 
+            // saveStatistics
+            // 
+            this.saveStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveStatistics.Location = new System.Drawing.Point(148, 284);
+            this.saveStatistics.Name = "saveStatistics";
+            this.saveStatistics.Size = new System.Drawing.Size(116, 24);
+            this.saveStatistics.TabIndex = 18;
+            this.saveStatistics.Text = "İstatiskleri kaydet";
+            this.saveStatistics.UseVisualStyleBackColor = true;
+            this.saveStatistics.Click += new System.EventHandler(this.saveStatistics_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(771, 450);
+            this.Controls.Add(this.saveStatistics);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button5);
@@ -542,6 +555,7 @@
         private System.Windows.Forms.ToolStripMenuItem aylıkHedefToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yeniToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem gösterToolStripMenuItem2;
+        private System.Windows.Forms.Button saveStatistics;
     }
 }
 

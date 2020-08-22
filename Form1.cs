@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SQLite;
 
 namespace Pomodoro_Keep_Focus
 {
@@ -181,7 +182,7 @@ namespace Pomodoro_Keep_Focus
             long totalMins = pomodoroMin + molaMin + restMin;
             long hours = 0;
             
-            if (totalMins > 60)
+            if (totalMins >= 60)
             {
                 hours = totalMins / 60;
                 totalMins %= 60;
@@ -373,6 +374,56 @@ namespace Pomodoro_Keep_Focus
         {
             setTime();
             setTimePicture(remainMinutes, remainSeconds);
+        }
+
+        /** 
+         * Veritabanı bağlantısı
+         * NOT: Veritabanı bağlantısı için System.Data.SQLite yüklenmesi
+         * gerekir. Yüklemek için Visual Studio -> Tools -> NuGet Package Manager -> Package Manager Console açarak
+         * Install-package System.Data.SQLite -Version 1.0.113.1
+         * 
+         * https://www.nuget.org/packages/System.Data.SQLite
+         */
+        private void saveStatistics_Click(object sender, EventArgs e)
+        {
+            var dialogResult = MessageBox.Show("Bugünün istatistiklerini veritabanına kaydetmek istediğinize emin misiniz?",
+                "Kaydet", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+            if (dialogResult != DialogResult.Yes)
+                return;
+
+            /*
+             * Veritabanına bağlantı ve table oluşturulmamış ise (ilk sefer)
+             * oluşturuyoruz*/
+            try
+            {
+                DatabaseConnection connection = new DatabaseConnection("stats.db");
+                SQLiteCommand command = connection.GetCommand;
+                command.CommandText =
+                    @"CREATE TABLE IF NOT EXISTS Statistics(id INTEGER PRIMARY KEY,
+Tarih TEXT, YapilanPomodoro INT,PMDakika INT, VerilenMola INT,
+VMDakika INT, Dinlenme INT, DDakika INT)";
+                command.ExecuteNonQuery();
+
+                long pmMinutes = pomodoroCount * Properties.Settings.Default.pWorkTime;
+                long mMinutes = molasCount * Properties.Settings.Default.pMolaTime;
+                long rMinutes = restsCount * Properties.Settings.Default.pRestTime;
+
+                string cmdString =
+                    String.Format("INSERT INTO Statistics(Tarih,YapilanPomodoro,PMDakika,VerilenMola,VMDakika,"+
+"Dinlenme,DDakika) VALUES('{0}', {1}, {2}, {3}, {4}, {5}, {6})",
+                        DateTime.Now.ToShortDateString(), pomodoroCount, pmMinutes, molasCount, mMinutes,
+                        restsCount, rMinutes);
+
+                command.CommandText = cmdString;
+                command.ExecuteNonQuery();
+
+                MessageBox.Show("İstatistikler kaydedildi!", "Başarılı",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            } catch (SQLiteException sqliteException)
+            {
+                MessageBox.Show(sqliteException.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
