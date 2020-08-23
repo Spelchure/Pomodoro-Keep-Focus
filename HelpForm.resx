@@ -117,24 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="timeCounter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>137, 17</value>
-  </metadata>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>234, 17</value>
-  </metadata>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>349, 17</value>
-  </metadata>
-  <metadata name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>489, 17</value>
-  </metadata>
-  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>605, 17</value>
-  </metadata>
+  <data name="label2.Text" xml:space="preserve">
+    <value>     Pomodoro tekniği Francesco Cirillo tarafından bulunan
+verimli çalışma yöntemidir. 25 dakika çalışma ve 5 dakika
+mola ile bir pomodoro tamamlanır. 4 pomodoro'ya erişince
+25 dakikalık uzun süre dinlenilir. Pomodoro'nun amacı
+bir iş üzerinde konstrasyonumuzu kurup o işi planlı ve düzgün
+bir şekilde bitirmemizi sağlar. Çalışma süresince hiçbir şekilde
+işten başka bir şeye odaklanılmaz ve aynı zamanda Mola süresince
+iş ile ilgili hiçbir şey düşünülmez.
+</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>    Eğer istenmeyen bir durum olupta planınız  bozulursa
+ bunu not alıp bir dahaki sefere önlem alabilirsiniz. Kendize
+günlük hedefler ve bu hedeflerin pomodoro sayısını
+belirleyerek belirli bir plan oluşturup çalışmanızı sürdürmeniz
+tavsiye edilir. Ayrıca işlerinizi önem puanına göre sıralayarak
+hangi işin öncelikli olduğunu belirleyip o işe öncelik vermeniz
+gerekir. 
+    Her bir ayda bir hedeflerini gözden geçirerek kendinize 
+puan ve ödüller verip başarı oranınızı tespit edebilirsiniz.
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

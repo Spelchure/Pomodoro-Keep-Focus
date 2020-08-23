@@ -43,7 +43,15 @@
             this.button4 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hedeflerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.görünümToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.günlükHedefToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yeniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.haftalıkHedefToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yeniToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gösterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aylıkHedefToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.yeniToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gösterToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.ayarlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hakkımızdaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.yardımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,16 +68,17 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.günlükHedefToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.haftalıkHedefToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aylıkHedefToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yeniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.yeniToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.gösterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.yeniToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.gösterToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.saveStatistics = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.button11 = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timePicture3)).BeginInit();
@@ -208,13 +217,12 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.hedeflerToolStripMenuItem,
-            this.görünümToolStripMenuItem,
             this.ayarlarToolStripMenuItem,
             this.hakkımızdaToolStripMenuItem,
             this.yardımToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(771, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(768, 24);
             this.menuStrip1.TabIndex = 11;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -224,15 +232,73 @@
             this.günlükHedefToolStripMenuItem,
             this.haftalıkHedefToolStripMenuItem,
             this.aylıkHedefToolStripMenuItem});
+            this.hedeflerToolStripMenuItem.Enabled = false;
             this.hedeflerToolStripMenuItem.Name = "hedeflerToolStripMenuItem";
             this.hedeflerToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.hedeflerToolStripMenuItem.Text = "Hedefler";
             // 
-            // görünümToolStripMenuItem
+            // günlükHedefToolStripMenuItem
             // 
-            this.görünümToolStripMenuItem.Name = "görünümToolStripMenuItem";
-            this.görünümToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.görünümToolStripMenuItem.Text = "Görünüm";
+            this.günlükHedefToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yeniToolStripMenuItem,
+            this.gösterToolStripMenuItem});
+            this.günlükHedefToolStripMenuItem.Name = "günlükHedefToolStripMenuItem";
+            this.günlükHedefToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.günlükHedefToolStripMenuItem.Text = "Günlük Hedef";
+            // 
+            // yeniToolStripMenuItem
+            // 
+            this.yeniToolStripMenuItem.Name = "yeniToolStripMenuItem";
+            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.yeniToolStripMenuItem.Text = "Yeni";
+            // 
+            // gösterToolStripMenuItem
+            // 
+            this.gösterToolStripMenuItem.Name = "gösterToolStripMenuItem";
+            this.gösterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gösterToolStripMenuItem.Text = "Göster";
+            // 
+            // haftalıkHedefToolStripMenuItem
+            // 
+            this.haftalıkHedefToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yeniToolStripMenuItem1,
+            this.gösterToolStripMenuItem1});
+            this.haftalıkHedefToolStripMenuItem.Name = "haftalıkHedefToolStripMenuItem";
+            this.haftalıkHedefToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.haftalıkHedefToolStripMenuItem.Text = "Haftalık Hedef";
+            // 
+            // yeniToolStripMenuItem1
+            // 
+            this.yeniToolStripMenuItem1.Name = "yeniToolStripMenuItem1";
+            this.yeniToolStripMenuItem1.Size = new System.Drawing.Size(108, 22);
+            this.yeniToolStripMenuItem1.Text = "Yeni";
+            // 
+            // gösterToolStripMenuItem1
+            // 
+            this.gösterToolStripMenuItem1.Name = "gösterToolStripMenuItem1";
+            this.gösterToolStripMenuItem1.Size = new System.Drawing.Size(108, 22);
+            this.gösterToolStripMenuItem1.Text = "Göster";
+            // 
+            // aylıkHedefToolStripMenuItem
+            // 
+            this.aylıkHedefToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.yeniToolStripMenuItem2,
+            this.gösterToolStripMenuItem2});
+            this.aylıkHedefToolStripMenuItem.Name = "aylıkHedefToolStripMenuItem";
+            this.aylıkHedefToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aylıkHedefToolStripMenuItem.Text = "Aylık Hedef";
+            // 
+            // yeniToolStripMenuItem2
+            // 
+            this.yeniToolStripMenuItem2.Name = "yeniToolStripMenuItem2";
+            this.yeniToolStripMenuItem2.Size = new System.Drawing.Size(108, 22);
+            this.yeniToolStripMenuItem2.Text = "Yeni";
+            // 
+            // gösterToolStripMenuItem2
+            // 
+            this.gösterToolStripMenuItem2.Name = "gösterToolStripMenuItem2";
+            this.gösterToolStripMenuItem2.Size = new System.Drawing.Size(108, 22);
+            this.gösterToolStripMenuItem2.Text = "Göster";
             // 
             // ayarlarToolStripMenuItem
             // 
@@ -246,12 +312,14 @@
             this.hakkımızdaToolStripMenuItem.Name = "hakkımızdaToolStripMenuItem";
             this.hakkımızdaToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.hakkımızdaToolStripMenuItem.Text = "Hakkımızda";
+            this.hakkımızdaToolStripMenuItem.Click += new System.EventHandler(this.hakkımızdaToolStripMenuItem_Click);
             // 
             // yardımToolStripMenuItem
             // 
             this.yardımToolStripMenuItem.Name = "yardımToolStripMenuItem";
             this.yardımToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.yardımToolStripMenuItem.Text = "Yardım";
+            this.yardımToolStripMenuItem.Click += new System.EventHandler(this.yardımToolStripMenuItem_Click);
             // 
             // groupBox1
             // 
@@ -395,69 +463,6 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // günlükHedefToolStripMenuItem
-            // 
-            this.günlükHedefToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.yeniToolStripMenuItem,
-            this.gösterToolStripMenuItem});
-            this.günlükHedefToolStripMenuItem.Name = "günlükHedefToolStripMenuItem";
-            this.günlükHedefToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.günlükHedefToolStripMenuItem.Text = "Günlük Hedef";
-            // 
-            // haftalıkHedefToolStripMenuItem
-            // 
-            this.haftalıkHedefToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.yeniToolStripMenuItem1,
-            this.gösterToolStripMenuItem1});
-            this.haftalıkHedefToolStripMenuItem.Name = "haftalıkHedefToolStripMenuItem";
-            this.haftalıkHedefToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.haftalıkHedefToolStripMenuItem.Text = "Haftalık Hedef";
-            // 
-            // aylıkHedefToolStripMenuItem
-            // 
-            this.aylıkHedefToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.yeniToolStripMenuItem2,
-            this.gösterToolStripMenuItem2});
-            this.aylıkHedefToolStripMenuItem.Name = "aylıkHedefToolStripMenuItem";
-            this.aylıkHedefToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aylıkHedefToolStripMenuItem.Text = "Aylık Hedef";
-            // 
-            // yeniToolStripMenuItem
-            // 
-            this.yeniToolStripMenuItem.Name = "yeniToolStripMenuItem";
-            this.yeniToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.yeniToolStripMenuItem.Text = "Yeni";
-            // 
-            // gösterToolStripMenuItem
-            // 
-            this.gösterToolStripMenuItem.Name = "gösterToolStripMenuItem";
-            this.gösterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gösterToolStripMenuItem.Text = "Göster";
-            // 
-            // yeniToolStripMenuItem1
-            // 
-            this.yeniToolStripMenuItem1.Name = "yeniToolStripMenuItem1";
-            this.yeniToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.yeniToolStripMenuItem1.Text = "Yeni";
-            // 
-            // gösterToolStripMenuItem1
-            // 
-            this.gösterToolStripMenuItem1.Name = "gösterToolStripMenuItem1";
-            this.gösterToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.gösterToolStripMenuItem1.Text = "Göster";
-            // 
-            // yeniToolStripMenuItem2
-            // 
-            this.yeniToolStripMenuItem2.Name = "yeniToolStripMenuItem2";
-            this.yeniToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.yeniToolStripMenuItem2.Text = "Yeni";
-            // 
-            // gösterToolStripMenuItem2
-            // 
-            this.gösterToolStripMenuItem2.Name = "gösterToolStripMenuItem2";
-            this.gösterToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.gösterToolStripMenuItem2.Text = "Göster";
-            // 
             // saveStatistics
             // 
             this.saveStatistics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -465,16 +470,111 @@
             this.saveStatistics.Name = "saveStatistics";
             this.saveStatistics.Size = new System.Drawing.Size(116, 24);
             this.saveStatistics.TabIndex = 18;
-            this.saveStatistics.Text = "İstatiskleri kaydet";
+            this.saveStatistics.Text = "İstatistikleri kaydet";
             this.saveStatistics.UseVisualStyleBackColor = true;
             this.saveStatistics.Click += new System.EventHandler(this.saveStatistics_Click);
+            // 
+            // button7
+            // 
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(148, 314);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(116, 24);
+            this.button7.TabIndex = 19;
+            this.button7.Text = "Bütün istatistikler";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.checkBox1.Location = new System.Drawing.Point(620, 254);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(144, 24);
+            this.checkBox1.TabIndex = 20;
+            this.checkBox1.Text = "Saat Sesi Efekti";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(686, 38);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 21;
+            this.button8.Text = "Not Defteri";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.richTextBox1.Location = new System.Drawing.Point(770, 38);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(431, 338);
+            this.richTextBox1.TabIndex = 22;
+            this.richTextBox1.Text = "";
+            // 
+            // button9
+            // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Location = new System.Drawing.Point(1060, 382);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(123, 23);
+            this.button9.TabIndex = 23;
+            this.button9.Text = "Dosyaya kaydet";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button10
+            // 
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Location = new System.Drawing.Point(931, 382);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(123, 23);
+            this.button10.TabIndex = 24;
+            this.button10.Text = "Dosya Aç";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "Dosya seçiniz";
+            this.openFileDialog1.Filter = "Text dosyaları  (*.txt)|*.txt|All files (*.*)|*.*";
+            // 
+            // fontDialog1
+            // 
+            this.fontDialog1.FontMustExist = true;
+            this.fontDialog1.ShowApply = true;
+            this.fontDialog1.ShowColor = true;
+            this.fontDialog1.Apply += new System.EventHandler(this.fontDialog1_Apply);
+            // 
+            // button11
+            // 
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Location = new System.Drawing.Point(802, 382);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(123, 23);
+            this.button11.TabIndex = 25;
+            this.button11.Text = "Yazı tipi";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(771, 450);
+            this.ClientSize = new System.Drawing.Size(768, 449);
+            this.Controls.Add(this.button11);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.saveStatistics);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label5);
@@ -499,6 +599,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Pomodoro Tekniği ile Verimli Çalışma - Bilgisayar Bilimi 2020";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.timePicture0)).EndInit();
@@ -529,7 +630,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem hedeflerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem görünümToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hakkımızdaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayarlarToolStripMenuItem;
@@ -556,6 +656,16 @@
         private System.Windows.Forms.ToolStripMenuItem yeniToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem gösterToolStripMenuItem2;
         private System.Windows.Forms.Button saveStatistics;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

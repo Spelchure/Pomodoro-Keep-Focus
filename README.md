@@ -5,7 +5,7 @@
 ## Pomodoro Keep Focus
 
 Pomodoro Keep Focus, Pomodoro tekniğini kullanarak planlı ve düzgün çalışmaya olanak tanır. <br/>
-For english: [README_en.md](https://github.com/Spelchure/Pomodoro-Keep-Focus/blob/master/README_en.md)
+**For English**: [README_en.md](https://github.com/Spelchure/Pomodoro-Keep-Focus/blob/master/README_en.md)
 
 
 ### Ekran görüntüsü

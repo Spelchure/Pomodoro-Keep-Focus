@@ -70,5 +70,17 @@ namespace Pomodoro_Keep_Focus.Properties {
                 this["lastMode"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Microsoft Sans Serif, 8.25pt")]
+        public global::System.Drawing.Font notFont {
+            get {
+                return ((global::System.Drawing.Font)(this["notFont"]));
+            }
+            set {
+                this["notFont"] = value;
+            }
+        }
     }
 }

@@ -27,4 +27,4 @@ See: [Lisans](https://github.com/Spelchure/Pomodoro-Keep-Focus/blob/master/LICEN
 ## Social Media 
 **[Website: bilgisayarbilimi.org](https://www.bilgisayarbilimi.org)**<br/>
 **[Instagram: @bilgisayar.bilimleri](https://www.instagram.com/bilgisayar.bilimleri)**<br/>
-**[Facebook sayfamız: Bilgisayar Bilimi](https://www.facebook.com/Bilgisayar-Bilimi-588994085125986)**<br/>
+**[Facebook page: Bilgisayar Bilimi](https://www.facebook.com/Bilgisayar-Bilimi-588994085125986)**<br/>

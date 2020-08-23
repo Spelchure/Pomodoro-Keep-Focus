@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
+using System.Media;
+using System.IO;
+using System.Runtime.CompilerServices;
 
 namespace Pomodoro_Keep_Focus
 {
@@ -39,6 +42,9 @@ namespace Pomodoro_Keep_Focus
         private int molasCount = 0;
         private int restsCount = 0;
 
+        private SoundPlayer soundPlayer; // Saat Sesi efekti
+        private int soundPlayer_ticks = 0;
+        
         /*
          * Verilen sayıyı resim kutusuna atama işlemi
          */
@@ -109,7 +115,19 @@ namespace Pomodoro_Keep_Focus
         {
             toolTip1.SetToolTip(this.button1, "Sayacı başlat");
             toolTip1.SetToolTip(this.button5, "Bu aşamayı atla");
+            toolTip1.SetToolTip(this.button6, "Başa sar");
+            this.richTextBox1.Font = Properties.Settings.Default.notFont;
             labelDate.Text = DateTime.Now.ToLongDateString();
+            try
+            {
+                soundPlayer = new SoundPlayer(Properties.Resources.clock);
+                soundPlayer.Load();
+            } catch (System.IO.FileNotFoundException)
+            {
+                checkBox1.Checked = false;
+                checkBox1.Enabled = false;
+                toolTip1.SetToolTip(checkBox1, "Dosya açılamadı");
+            }
             switch(Properties.Settings.Default.lastMode)
             {
                 case (int)PomodoroModes.Work:
@@ -192,7 +210,6 @@ namespace Pomodoro_Keep_Focus
                 String.Format("Toplam: {0} saat {1} dakika.", hours, totalMins);
 
         }
-    
         /**
          * Bir diğer aşamaya geçme
          */
@@ -247,6 +264,14 @@ namespace Pomodoro_Keep_Focus
          */
         private void timeCounter_Tick(object sender, EventArgs e)
         {
+            if(checkBox1.Checked) //Saat sesi efekti
+            {
+                if(++soundPlayer_ticks == 2)
+                {
+                    soundPlayer.Play();
+                    soundPlayer_ticks = 0;
+                }  
+            }
             /**
              * Saniyeyi azaltmamız ve saniye 0 olduğu zaman
              * dakikayı azaltmamız gerekiyor ayrıca şuan ki 
@@ -267,7 +292,7 @@ namespace Pomodoro_Keep_Focus
                         restsCount++;
                         break;
                 }*/
-                
+                 
                 switchMode(); 
                 return;
             }
@@ -282,7 +307,6 @@ namespace Pomodoro_Keep_Focus
             }
             //Resimleri değiştiriyoruz:
             setTimePicture(remainMinutes, remainSeconds);
-            //TODO play tick sound. if enabled in settings
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -425,5 +449,89 @@ VMDakika INT, Dinlenme INT, DDakika INT)";
                 MessageBox.Show(sqliteException.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-    }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Statistics statisticsForm = new Statistics();
+            statisticsForm.Show();
+        }
+
+        private void hakkımızdaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hakkımızda hakkımızda = new Hakkımızda();
+            hakkımızda.ShowDialog();
+        }
+
+        private void yardımToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelpForm helpForm = new HelpForm();
+            helpForm.ShowDialog();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (this.Size.Width > 800)
+                this.Size = new Size(788, this.Size.Height);
+            else
+                this.Size = new Size(1230, this.Size.Height);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+            if(richTextBox1.TextLength > 0)
+            {
+                if(saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = saveFileDialog1.FileName;
+                    var fileStream = saveFileDialog1.OpenFile();
+                    using (StreamWriter writer = new StreamWriter(fileStream))
+                    {
+                        writer.Write(richTextBox1.Text);
+                    }
+                    MessageBox.Show(filePath + " dosyasına notlar kaydedildi.", "Başarılı",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            string fileContent = string.Empty; 
+            DialogResult dr = openFileDialog1.ShowDialog();
+            if(dr == DialogResult.OK)
+            {
+                var fileStream = openFileDialog1.OpenFile();
+                using (StreamReader reader = new StreamReader(fileStream))
+                {
+                    fileContent = reader.ReadToEnd();
+                }
+            }
+            if (fileContent.Length > 0)
+                richTextBox1.Text = fileContent;
+                //rictTextBox1.Text += fileContent;
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            if(fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                richTextBox1.Font = fontDialog1.Font;
+                richTextBox1.ForeColor = fontDialog1.Color;
+                Properties.Settings.Default.notFont = fontDialog1.Font; 
+            }
+        }
+
+        private void fontDialog1_Apply(object sender, EventArgs e)
+        {
+            richTextBox1.Font = fontDialog1.Font;
+            richTextBox1.ForeColor = fontDialog1.Color;
+            Properties.Settings.Default.notFont = fontDialog1.Font; 
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Save(); 
+        }
+    }   
 }
